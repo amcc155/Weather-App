@@ -1,0 +1,50 @@
+
+.weather-box{
+width:70%;
+    background-color: gray;
+    height:500px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;;
+   /* From https://css.glass */
+background: rgba(83, 81, 81, 0.05);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5.8px);
+backdrop-filter: blur(5.8px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+p{
+    text-align: center;
+}
+.city-name{
+    font-size:2rem;
+    text-align: center;
+}
+
+.temp{
+    font-size: 2.5rem;
+}
+
+.top-banner{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.search-box{
+   display: none;
+
+}
+
+.submit{
+    display:none;
+}
