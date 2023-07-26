@@ -1,6 +1,8 @@
-
+body{
+  color:white;
+}
 .weather-box{
-width:70%;
+width:100%;
     background-color: gray;
     height:500px;
     position: fixed;
@@ -9,7 +11,7 @@ width:70%;
     transform: translate(-50%, -50%);
     border-radius: 15px;;
    /* From https://css.glass */
-background: rgba(83, 81, 81, 0.05);
+background-color: #2D242433;
 border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(5.8px);
@@ -20,6 +22,8 @@ border: 1px solid rgba(255, 255, 255, 0.3);
 
 p{
     text-align: center;
+    margin-top:10px;
+    margin-bottom:10px;
 }
 .city-name{
     font-size:2rem;
@@ -48,3 +52,60 @@ p{
 .submit{
     display:none;
 }
+
+.loader{
+    display: none;
+    height: 200px;
+   margin: 0 auto;
+   position:absolute;
+   top:50%;
+   left:50%;
+  
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    background: 
+      radial-gradient(farthest-side,#766DF4 95%,#0000) 50% 1px/12px 12px no-repeat,
+      radial-gradient(farthest-side,#0000 calc(100% - 14px),#E4E4ED 0);
+    animation:s9 2s infinite linear;
+}
+  @keyframes s9 {to{transform: rotate(1turn)}}
+
+
+  .forecast{
+    display: flex;
+    gap:20px;
+    flex-direction: row wrap;
+    justify-content: center;
+    margin-top:2.5rem;
+
+    
+  }
+
+  .forecast-box{
+    height:150px;
+    background-color: white;
+    width:130px;
+ 
+  }
+
+  .temps{
+    display: flex;
+    flex-direction: column;
+  }
+
+  th{
+    padding-right:20px;
+    padding-bottom:15px;
+  }
+
+  .min,.max{
+    padding-left:25px;
+  }
+
+  .info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }

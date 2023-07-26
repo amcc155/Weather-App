@@ -14,7 +14,9 @@
 
 
     <main>
-
+        <div class = 'loader'> 
+            <!-- <img src="images/weather-1.1s-200px.png"> -->
+        </div>
         <!-- make display for weather-->
         <div class = "weather-box">
             
@@ -28,9 +30,43 @@
             <button class = 'submit' type="submit">Submit</button>
             <p class = "city-name"></p>
         </div>
+        <div class = 'info'>
             <p class = 'cloud'></p>
             <p class = 'temp'></p>
+        
+            <img class = "icon">
         </div>
+            <section class = 'forecast'>
+                
+                <table>
+                    <thead>
+                      <tr>
+                        <th></th> <!-- Empty cell for the side headers -->
+                        <th class="date"></th>
+                        <th class="date"></th>
+                        <th class="date"></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Min</td>
+                        <td class="min">Min Temp 1</td>
+                        <td class="min">Min Temp 2</td>
+                        <td class="min">Min Temp 3</td>
+                      </tr>
+                      <tr>
+                        <td>Max</td>
+                        <td class="max">Max Temp 1</td>
+                        <td class="max">Max Temp 2</td>
+                        <td class="max">Max Temp 3</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  
+                
+        </div>
+        
+       
         <script src="https://kit.fontawesome.com/9ebe85b8c3.js" crossorigin="anonymous"></script>
     
 </body>
